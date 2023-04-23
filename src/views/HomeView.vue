@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import TheWelcome from '../components/TheWelcome.vue'
 import headerPublic from '../components/haederPublic.vue'
+import { useRouter, useRoute } from "vue-router"
 </script>
 
 <template>
@@ -9,6 +10,7 @@ import headerPublic from '../components/haederPublic.vue'
     <TheWelcome />
     <a href="/test">gotest</a>
     <button @click="goTest">button</button>
+    <a href="/setUpTest">setUpTest</a>
   </main>
 </template>
 
