@@ -5,12 +5,11 @@
     <!-- <div>
       <p v-for="(value, key, index) in myObj" :key="value">{{ index + 1 }}. {{ key }}: {{ value }}</p>
     </div> -->
-    <slot></slot>
     <p>{{ title }}</p>
-    <br>
+    <slot></slot>
     <p>chlid name: {{ myName }}</p>
     <button @click="changeName">changeName</button>
-    <div>chlid get provide:  {{ message }}</div>
+    <!-- <div>chlid get provide:  {{ message }}</div> -->
   </div>
 </template>
 
@@ -44,7 +43,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 .header {
   width: 1080px;
   .top {
