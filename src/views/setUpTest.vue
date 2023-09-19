@@ -4,7 +4,7 @@
         <div>{{ name }}</div>
         <h5>count: {{ count }}</h5>
         <button @click="showMsg('msg')">button</button>
-        Mouse position is at: {{ x }}, {{ y }}
+        <!-- Mouse position is at: {{ x }}, {{ y }} -->
         <br>
     </div>
 </template>
@@ -21,7 +21,8 @@
         count.value++;
     }, 1000);
     function showMsg(msg:any) {
-        console.log('show', msg)
+        console.log('show', msg);
+        count.value++;
     }
 </script>
 <style lang="scss">
